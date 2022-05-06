@@ -1,0 +1,153 @@
+body{
+    background: linear-gradient(180deg,rgb(53, 156, 156) 0%, rgb(12, 124, 87) 100%);
+    background-repeat: no-repeat;
+    height:100%;
+
+  }
+  .App{
+      display: flex;
+      margin-top: 4rem;
+      flex-direction: column;
+         
+  }
+  .App h1{
+    display: inline;
+    text-align: center;
+    margin-bottom: 4rem;
+    color:aliceblue
+  }
+  .AddTodos{
+      display: flex;
+      justify-content: center;
+  }
+
+  .inputTodo{
+      width: 50%;
+      max-height: 4.5rem;
+      height: 2.5rem;  
+      background-color: aliceblue;
+      border-radius: 4px;
+      padding: 0.5rem 1 rem;
+      min-width: 16rem;
+      align-self: center;
+  }
+  .inputTodo:focus{
+      outline:none;
+      border: 2px solid antiquewhite;
+
+  }
+  .add-btn{
+      margin-left: 1rem;
+      background-color: rgb(26, 77, 53);
+      color:wheat;
+      border:2px solid antiquewhite;
+      font-size: 1.4rem;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      cursor:pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 4px 10px rgb(18, 59, 40);
+  }
+  .add-btn:hover{
+    box-shadow: 2px 4px 10px rgb(9, 34, 22);
+  }
+
+  .displaytodos{
+      
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .displaytodos .buttons{
+      margin-bottom: 2rem;
+      
+  }
+  
+  .displaytodos .buttons button{
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 12px;
+
+}
+.displaytodos .buttons button:hover{
+    box-shadow: 2px 4px 10px rgb(7, 24, 16);  
+
+}
+.displaytodos .buttons button:focus{
+    box-shadow: 2px 4px 10px rgb(7, 24, 16);  
+    border:2px solid rgb(10, 56, 10)
+}
+.displaytodos ul{
+    list-style: none;
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: aliceblue;
+    margin:0 1rem 1rem 0;
+    height: 8rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+
+
+}
+.card textarea{
+    padding: 0.5rem;
+    border-radius: 6px;
+    border:none;
+    background-color: aliceblue;
+    height: 70%;
+}
+.card textarea:hover{
+    box-shadow: 2px 4px 10px rgb(75, 124, 100);
+}
+.card textarea:disabled{
+
+    background-color: transparent;
+
+}
+.card .btns{
+position: relative;
+top:18px;
+left: 132px;
+
+
+}
+.card .btns button{
+    border-radius: 20%;
+    border:none;
+    margin: 0 0.6rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: darkblue;
+    background-color: transparent;
+    
+    }
+.card .btns button:hover{
+    box-shadow: 2px 4px 10px rgb(9, 34, 22);   
+}
+.completed{
+    position: absolute;
+    width: 75px;
+    box-shadow: 2px 4px 10px rgb(7, 36, 22);
+    text-align: center;
+    background-color: green;
+    border: 1px solid darkgreen;
+    color: antiquewhite;
+    font-size: 0.6rem;
+    padding: 2px;
+    border-radius: 20px;
+}
